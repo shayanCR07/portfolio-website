@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
@@ -6,8 +7,12 @@ import ProjectSection from "./components/ProjectSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AcheivementsSection";
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
       <main className="flex flex-col min-h-screen bg-[#121212] ">
         <Navbar/>

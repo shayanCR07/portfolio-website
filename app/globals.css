@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
 
 :root {
   --background: #ffffff;
@@ -10,6 +12,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: "Poppins";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,3 +27,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* styles/globals.css */
+
+html {
+  scroll-behavior: smooth;
+}
+

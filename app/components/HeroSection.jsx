@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
 import { motion, useInView } from 'framer-motion';
 import RevealOnScroll from './RevealOnScroll';
+import '../globals.css';
 
 
     
@@ -24,18 +25,16 @@ const HeroSection = () => {
         animate={inView ? {opacity: 1, scale:1} : {opacity: 0, scale:0.5}}
         transition={{duration: 0.5}}
         className='col-span-7 place-self-center text-center sm:text-left'>
-        <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-            <span className='text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-purple-600'>Hello, I'm{" "}</span>
+        <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-bold">
+            <span className='text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-purple-600'>Hello, I'm {" "}</span>
             <br />
             <TypeAnimation
                 sequence={[
         // Same substring at the start will only be typed out once, initially
-                'Shayan',
-                 1000, // wait 1s before replacing "Mice" with "Hamsters"
+                'Shayan Das',
+                 1000,
                 'Web Developer',
                  1000,
-                'UI/UX Designer',
-                1000,
                 'Learner',
                 1000
             ]}
@@ -44,11 +43,16 @@ const HeroSection = () => {
             repeat={Infinity}
             />
         </h1>
-        <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, nobis.
+        <p className='text-[#ADB7BE] text-base sm:text-lg lg:text-l mb-6 font-display'>I am currently a 4th year B.tech student and passionate about different technologies to solve real world problems.
         </p> 
         <div >
+            <a href="#contact" className='scroll-behavior: smooth;'>
             <button className='px-6 py-3 rounded-full mr-4 w-full sm:w-fit bg-gradient-to-br from-cyan-400 to-purple-600 hover:bg-slate-200 text-white cursor-pointer'>Hire Me</button>
+            </a>
+            
+            <a href="/resume.pdf" download>
             <button className='px-6 py-3 rounded-full bg-transparent w-full sm:w-fit border text-white hover:bg-slate-800 border-white mt-3 cursor-pointer'>Download Resume</button>
+            </a>
         </div>
         </motion.div>
         

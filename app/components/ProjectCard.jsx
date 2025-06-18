@@ -13,9 +13,9 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
         <Link href={gitUrl} className='h-14 w-14 border-2 mr-4 relative rounded-full border-[#ADB7BE] hover:border-white'>
         <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
         </Link>
-        <Link href={previewUrl} className='h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white'>
+        {/* <Link href={previewUrl} className='h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white'>
         <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
-        </Link>
+        </Link> */}{/*after deployment it can be anable for viewing purpose */}
         </div>
       </div>
       <div className='text-white mt-2 rounded-b-xl bg-[#181818] py-6 px-4'>

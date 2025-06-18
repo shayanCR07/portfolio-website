@@ -8,38 +8,47 @@ import { motion, useInView } from 'framer-motion';
 const projectsData = [
     {
       id: 1,
-      title: "React Portfolio Website",
+      title: "Dashboard of an E-commerce Website",
       description: "Project 1 description",
       image: "/images/projects/1.png",
       tag: ["All", "Web"],
-      gitUrl: "/",
+      gitUrl: "https://github.com/shayanCR07/Admin-Panel-Dashboard-of-Ecommerce-website",
       previewUrl: "/",
     },
     {
       id: 2,
-      title: "Potography Portfolio Website",
+      title: "AI Image Generator",
       description: "Project 2 description",
       image: "/images/projects/2.png",
       tag: ["All", "Web"],
-      gitUrl: "/",
+      gitUrl: "https://github.com/shayanCR07/Text-to-image-generator",
       previewUrl: "/",
     },
     {
       id: 3,
-      title: "E-commerce Application",
+      title: "MY another Portfolio using HTML,CSS",
       description: "Project 3 description",
       image: "/images/projects/3.png",
       tag: ["All", "Web"],
-      gitUrl: "/",
+      gitUrl: "https://github.com/shayanCR07/Portfolio",
       previewUrl: "/",
     },
     {
       id: 4,
-      title: "Food Ordering Application",
+      title: "Uber Clone",
       description: "Project 4 description",
       image: "/images/projects/4.png",
       tag: ["All", "Mobile"],
-      gitUrl: "/",
+      gitUrl: "https://github.com/shayanCR07/Uber-Clone",
+      previewUrl: "/",
+    },
+    {
+      id: 5,
+      title: "A Blog Website",
+      description: "Authentication and CRUD operations",
+      image: "/images/projects/5.png",
+      tag: ["All", "Web"],
+      gitUrl: "https://github.com/shayanCR07/my-blog",
       previewUrl: "/",
     }
 ];
@@ -75,7 +84,7 @@ const ProjectSection = () => {
               description={project.description}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
+              // previewUrl={project.previewUrl}
             />
         </motion.li>))}
       </ul>
