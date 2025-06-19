@@ -14,6 +14,8 @@ const TAB_DATA = [
         <li>C</li>
         <li>C++</li>
         <li>Java</li>
+        <li> Java Script</li>
+        <li>SQL</li>
       </ul>
     ),
   },
@@ -22,9 +24,9 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>HTML, CSS, Java Script</li>
+        <li>HTML, CSS</li>
         <li>React, Node.js, Express.js, Mongo DB, Tailwind-CSS </li>
-        <li>SQL</li>
+        
       </ul>
     ),
   },
