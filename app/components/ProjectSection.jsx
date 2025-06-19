@@ -9,7 +9,7 @@ const projectsData = [
     {
       id: 1,
       title: "Dashboard of an E-commerce Website",
-      description: "Project 1 description",
+      description: "A responsive admin dashboard panel website",
       image: "/images/projects/1.png",
       tag: ["All", "Web"],
       gitUrl: "https://github.com/shayanCR07/Admin-Panel-Dashboard-of-Ecommerce-website",
@@ -18,7 +18,7 @@ const projectsData = [
     {
       id: 2,
       title: "AI Image Generator",
-      description: "Project 2 description",
+      description: "An AI image generator website with user given prompt. Make your imagination in real!",
       image: "/images/projects/2.png",
       tag: ["All", "Web"],
       gitUrl: "https://github.com/shayanCR07/Text-to-image-generator",
@@ -27,7 +27,7 @@ const projectsData = [
     {
       id: 3,
       title: "MY another Portfolio using HTML,CSS",
-      description: "Project 3 description",
+      description: "My portfolio website using only HTML and CSS",
       image: "/images/projects/3.png",
       tag: ["All", "Web"],
       gitUrl: "https://github.com/shayanCR07/Portfolio",
@@ -36,7 +36,7 @@ const projectsData = [
     {
       id: 4,
       title: "Uber Clone",
-      description: "Project 4 description",
+      description: "An Uber app simulation using MERN Stack",
       image: "/images/projects/4.png",
       tag: ["All", "Mobile"],
       gitUrl: "https://github.com/shayanCR07/Uber-Clone",
@@ -45,7 +45,7 @@ const projectsData = [
     {
       id: 5,
       title: "A Blog Website",
-      description: "Authentication and CRUD operations",
+      description: "A Blog Posting Website Using MERN",
       image: "/images/projects/5.png",
       tag: ["All", "Web"],
       gitUrl: "https://github.com/shayanCR07/my-blog",
