@@ -12,7 +12,7 @@ export async function POST(req, res) {
       from: fromEmail,
       to: [fromEmail, email],
       subject: subject,
-      react: (
+      html: (
         <>
           <h1>{subject}</h1>
           <p>Thank you for contacting us!</p>
@@ -23,6 +23,7 @@ export async function POST(req, res) {
     });
     return NextResponse.json(data);
   } catch (error) {
-    return NextResponse.json({ error });
+    console.error("Resend API Error:", error);
+    return NextResponse.json({ error :"Failed to send email" }, { status: 500  });
   }
 }
