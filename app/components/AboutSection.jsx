@@ -1,6 +1,7 @@
 "use client";
 import React, { useTransition, useState, useRef } from "react";
 import Image from "next/image";
+import about from "../About.jpg"
 import TabButton from "./TabButton";
 import { motion, useInView } from "framer-motion";
 
@@ -79,7 +80,7 @@ const AboutSection = () => {
       initial="initial"
       animate={isInView ? "animate" : "initial"}
       transition={{ duration: 0.9 }}>
-        <Image src="/images/About.jpg" alt="about" width={500} height={500}/>
+        <Image src={about} alt="about" width={500} height={500}/>
       </motion.div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4 mt-5">About Me</h2>
