@@ -84,6 +84,7 @@ const ProjectSection = () => {
               description={project.description}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
+              target='_blank'
               // previewUrl={project.previewUrl}
             />
         </motion.li>))}
